@@ -11,7 +11,7 @@ class Anagram
   def match(sentence)
     @sentence = string
     binding.pry
-    
+
 
   end
 
