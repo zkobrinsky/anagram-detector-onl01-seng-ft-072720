@@ -12,7 +12,7 @@ class Anagram
     sentence.detect do |word|
       binding.pry
       if word.split("") == @word
-        
+
         return word
       else
         return []
