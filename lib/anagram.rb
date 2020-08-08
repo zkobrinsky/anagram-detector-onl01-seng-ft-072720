@@ -9,7 +9,7 @@ class Anagram
   end
 
   def match(sentence)
-    @sentence.each do |word|
+    sentence.each do |word|
       if word.split("") == @word
         true
       else
