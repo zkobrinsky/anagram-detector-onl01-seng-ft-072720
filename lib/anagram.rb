@@ -13,7 +13,7 @@ class Anagram
       # binding.pry
       if word.downcase.split("").sort == @word.downcase.split("").sort
         binding.pry
-        return word.split
+        word.split
       else
         return []
       end
