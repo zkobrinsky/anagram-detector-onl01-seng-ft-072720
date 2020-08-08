@@ -12,9 +12,23 @@ class Anagram
     anagrams = []
     sentence.select do |word|
       binding.pry
-      if word.downcase.split("").sort == @word.downcase.split("").sort
+      if sentence.length > 1
+        if word.downcase.split("").sort == @word.downcase.split("").sort
         # binding.pry
+        word.split
+      else
+        return []
+      end
+
+    else
+      if word.downcase.split("").sort == @word.downcase.split("").sort
+      # binding.pry
         anagrams << word
+      else
+        return []
+      end
+      anagrams
+        # anagrams << word
 
       end
       anagrams
