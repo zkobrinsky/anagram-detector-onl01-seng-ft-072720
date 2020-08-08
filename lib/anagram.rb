@@ -16,7 +16,7 @@ class Anagram
         false
       end
     end
-    binding.pry
+    # binding.pry
 
 
   end
