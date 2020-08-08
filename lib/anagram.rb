@@ -11,7 +11,7 @@ class Anagram
   def match(sentence)
     anagrams = []
     sentence.select do |word|
-      binding.pry
+      # binding.pry
       if sentence.length > 1
         if word.downcase.split("").sort == @word.downcase.split("").sort
         # binding.pry
@@ -22,7 +22,7 @@ class Anagram
 
     else
       if word.downcase.split("").sort == @word.downcase.split("").sort
-      # binding.pry
+      binding.pry
         anagrams << word
       else
         return []
