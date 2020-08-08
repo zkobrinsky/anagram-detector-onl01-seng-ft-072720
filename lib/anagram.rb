@@ -9,6 +9,7 @@ class Anagram
   end
 
   def match(sentence)
+    anagram = []
     sentence.detect do |word|
       if word.downcase.split("").sort == @word.downcase.split("").sort
         binding.pry
