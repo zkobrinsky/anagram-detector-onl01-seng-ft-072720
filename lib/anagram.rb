@@ -2,10 +2,10 @@ require "pry"
 
 class Anagram
 
-  attr_accessor :string
+  attr_accessor :word
 
-  def initialize(string)
-    @string = string
+  def initialize(word)
+    @word = word
 
   end
 
