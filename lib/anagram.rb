@@ -2,16 +2,16 @@ require "pry"
 
 class Anagram
 
-  attr_accessor :word, :string
+  attr_accessor :word, :sentence
 
   def initialize(word)
     @word = word
   end
 
-  def match(string)
-    @string = string
+  def match(sentence)
+    @sentence = string
     binding.pry
-    string_to_array = string.split(" ")
+    
 
   end
 
