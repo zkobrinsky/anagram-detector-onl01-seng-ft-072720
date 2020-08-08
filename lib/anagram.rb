@@ -12,7 +12,7 @@ class Anagram
     sentence.detect do |word|
       # binding.pry
       if word.downcase.split("").sort == @word.downcase.split("").sort
-
+        binding.pry
         return %w(word)
       else
         return []
