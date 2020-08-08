@@ -9,7 +9,7 @@ class Anagram
   end
 
   def match(sentence)
-    sentence.detect do |word|
+    sentence.each do |word|
       # binding.pry
       if word.downcase.split("").sort == @word.downcase.split("").sort
         binding.pry
