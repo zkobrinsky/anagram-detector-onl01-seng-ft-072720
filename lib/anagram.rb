@@ -11,7 +11,7 @@ class Anagram
   def match(sentence)
     sentence.detect do |word|
       binding.pry
-      if word.split("").includes? @word.split("")
+      if word.split("").include? @word.split("")
 
         return %w(word)
       else
