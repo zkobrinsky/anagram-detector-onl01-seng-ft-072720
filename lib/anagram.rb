@@ -10,7 +10,7 @@ class Anagram
 
   def match(sentence)
     anagrams = []
-    sentence.each do |word|
+    sentence.select do |word|
       # binding.pry
       if word.downcase.split("").sort == @word.downcase.split("").sort
         # binding.pry
