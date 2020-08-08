@@ -11,6 +11,7 @@ class Anagram
   def match(sentence)
     sentence.detect do |word|
       if word.split("") == @word
+        binding.pry
         return word
       else
         return []
