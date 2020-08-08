@@ -15,7 +15,7 @@ class Anagram
       if word.downcase.split("").sort == @word.downcase.split("").sort
         # binding.pry
         anagrams << word
-        
+
       end
       anagrams
     end
