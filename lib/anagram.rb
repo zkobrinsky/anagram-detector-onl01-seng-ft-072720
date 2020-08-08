@@ -11,6 +11,7 @@ class Anagram
   def match(string)
     @string = string
     string_to_array = string.split(" ")
+    binding.pry
   end
 
 end
