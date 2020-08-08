@@ -10,8 +10,9 @@ class Anagram
 
   def match(string)
     @string = string
-    string_to_array = string.split(" ")
     binding.pry
+    string_to_array = string.split(" ")
+    
   end
 
 end
