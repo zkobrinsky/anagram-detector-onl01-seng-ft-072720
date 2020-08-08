@@ -14,6 +14,7 @@ class Anagram
         true
       else
         false
+      end
     end
     binding.pry
 
