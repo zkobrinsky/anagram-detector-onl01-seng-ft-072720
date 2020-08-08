@@ -10,8 +10,8 @@ class Anagram
 
   def match(sentence)
     sentence.detect do |word|
-      binding.pry
-      if word.split("").include? @word.split("")
+      # binding.pry
+      if word.downcase.split("").sort == @word.downcase.split("").sort
 
         return %w(word)
       else
