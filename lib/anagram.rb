@@ -10,28 +10,14 @@ class Anagram
 
   def match(sentence)
     anagrams = []
-    sentence.select do |word|
+    sentence.detect do |word|
       # binding.pry
-      if sentence.length > 1
-        if word.downcase.split("").sort == @word.downcase.split("").sort
+      if word.downcase.split("").sort == @word.downcase.split("").sort
         # binding.pry
         word.split
       else
         return []
       end
-
-    else
-      if word.downcase.split("").sort == @word.downcase.split("").sort
-      binding.pry
-        anagrams << word
-      else
-        return []
-      end
-      anagrams
-        # anagrams << word
-
-      end
-      anagrams
     end
     # binding.pry
 
