@@ -12,7 +12,7 @@ class Anagram
     @string = string
     binding.pry
     string_to_array = string.split(" ")
-    
+
   end
 
 end
