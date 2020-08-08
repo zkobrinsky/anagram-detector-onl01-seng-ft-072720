@@ -13,7 +13,7 @@ class Anagram
       binding.pry
       if word.split("") == @word.split("")
 
-        return word
+        return %w(word)
       else
         return []
       end
