@@ -12,7 +12,8 @@ class Anagram
     sentence.detect do |word|
       if word.split("") == @word
         return word
-
+      else
+        return []
       end
     end
     # binding.pry
