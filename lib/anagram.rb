@@ -10,8 +10,9 @@ class Anagram
 
   def match(sentence)
     sentence.detect do |word|
+      binding.pry
       if word.split("") == @word
-        binding.pry
+        
         return word
       else
         return []
